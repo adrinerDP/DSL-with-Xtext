@@ -1,0 +1,16 @@
+package org.example.entities.validation;
+
+
+import org.eclipse.xtext.validation.Check;
+import org.example.entities.entities.Entity;
+
+public class EntitiesValidator extends AbstractEntitiesValidator {
+
+	
+	@Check
+	public void checkNoCycleInEntityHierarchy(Entity entity) {
+		if (entity.superType == null) {
+			return;
+		}
+	}
+}

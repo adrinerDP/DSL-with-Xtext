@@ -1,0 +1,25 @@
+package org.example.xtend.examples
+
+
+class XtendHelloWorld {
+	def static void main(String[] args) {
+		val list = newArrayList("a", "b", "c")
+		println(list.head)
+		println(list.last)
+	}
+	
+	interface MyInnerInterface {
+		public static String s = "s"
+	}
+}
+
+class ItExamples {
+	def trans1(String it) {
+		toLowerCase
+	} 
+	
+	def trans2(String s) {
+		var it = s
+		toLowerCase
+	}	
+}

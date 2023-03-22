@@ -1,0 +1,18 @@
+package org.example.entities.validation;
+
+import java.util.HashSet;
+
+import org.eclipse.xtext.validation.Check;
+import org.example.entities.entities.EntitiesPackage;
+import org.example.entities.entities.Entity;
+
+class EntitiesValidator extends AbstractEntitiesValidator {
+	@Check
+	public void checkNoCycleInEntityHierarchy(Entity entity) {
+		if (entity.getSuperType() == null) {
+			return;
+		}
+		
+		var visitedEntities = new HashSet(entity);
+	}
+}

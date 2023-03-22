@@ -1,0 +1,15 @@
+package org.example.xtend.examples
+
+import java.util.Collections
+
+class XtendHelloWorld {
+	def static void main(String[] args) {
+		val list = newArrayList("a", "b", "c")
+		println(list.head)
+		println(list.last)
+	}
+	
+	interface MyInnerInterface {
+		public static String s = "s"
+	}
+}

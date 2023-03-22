@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Examples
+Bundle-SymbolicName: org.example.xtend.examples
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.example.xtend.examples
+Bundle-RequiredExecutionEnvironment: JavaSE-17

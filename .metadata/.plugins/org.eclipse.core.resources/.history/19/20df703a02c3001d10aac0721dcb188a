@@ -1,0 +1,14 @@
+package org.example.xtend.examples
+
+import java.util.Collections
+
+class XtendHelloWorld {
+	def static void main(String[] args) {
+		val list = Collections.emptyList
+		System.out.println(list)
+	}
+	
+	interface MyInnerInterface {
+		public static String s = "s"
+	}
+}
